@@ -1,10 +1,19 @@
 var input = document.querySelector("#txt-input");
-var btntranslate = document.querySelector("#btn-translate");
+var btnTranslate = document.querySelector("#btn-translate");
 var outputDiv = document.querySelector("#output");
 
-function clickHandler() {
-    outputDiv.innerText = input.value;
+var serverURL = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json"; 
+
+btnTranslate.addEventListener("click", clickHandler);
+
+function clickHandler(){
+    var txtInput = input.value;
+    fetch(getTranslationURL(txtInput))
+    .then(response => response.json())
+    .then(json => console.log(json))
 
 }
 
-btntranslate.addEventListener("click", clickHandler);
+function getTranslationURL(txt){
+    return serverURL+"?"+"text="+txt
+}
