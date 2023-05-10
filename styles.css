@@ -4,7 +4,8 @@
 
 body {
     font-family: "Happy Monkey", sans-serif;
-    /* margin: 0px; */
+    --primary-color: #f5e050;
+     margin: 0px; 
 
 }
 
@@ -21,39 +22,75 @@ div {
     padding: 1rem;
     margin: auto;
     text-align: center;
+    
+
 
 }
 
 textarea {
-
+    font-family:inherit;
     border-radius: 10px;
     background-color: #dddddd;
     font-size: 1em;
     line-height: 1.4;
     transition: all 0.2s;
-    margin: 2em auto;
+    margin: 1.5em auto;
     padding: 1rem;
-    width: 80%;
-    height: 20vh;
+    width: 40%;
+    height: 10vh;
     display: block;
+    border: 2px solid black;
 }
 
 textarea:hover {
     cursor: pointer;
     background-color: #eeee;
+   
 }
 
 button {
-    margin-left: 8.5em;
-
+    font-family: inherit;
+    display:block;
+    margin:auto;
+    padding:1em;
+    border-radius:10px;
+    background-color:var(--primary-color);
+   
 }
 
 #output {
-    border: 1px solid black;
+    border: 2px solid black;
     background-color: #dddddd;
     border-radius: 10px;
-    height: 20vh;
-    width: 80%;
-    margin: auto;
+    height: 10vh;
+    width: 40%;
+    margin: .5em auto;
     padding: 1rem;
+}
+
+
+.nav{
+    background-color: var(--primary-color); 
+    padding: .5em;
+    border-bottom-left-radius:1em;
+    
+
+}
+
+.footer{
+    background-color:var(--primary-color);
+    padding: 1em;
+    text-align:center;
+    border-top-right-radius:1em;
+    
+    margin-top:2.7em;
+   
+
+    
+    
+}
+
+.footer-txt{
+    max-width:600px;
+    margin:auto;
 }
