@@ -1,19 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
 
-:root {}
+:root {
+    --primary-color: #f5e050;
+}
 
 body {
     font-family: "Happy Monkey", sans-serif;
-    --primary-color: #f5e050;
-     margin: 0px; 
+    margin: 0px;
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
 
 }
+
+main{
+    flex-grow:1;
+}
+
 
 hr {
     margin: 1rem;
 }
 
-h1 {
+.nav h1 {
     text-align: center;
     margin: 2rem aut0;
 }
@@ -22,13 +31,13 @@ div {
     padding: 1rem;
     margin: auto;
     text-align: center;
-    
+
 
 
 }
 
 textarea {
-    font-family:inherit;
+    font-family: inherit;
     border-radius: 10px;
     background-color: #dddddd;
     font-size: 1em;
@@ -45,17 +54,17 @@ textarea {
 textarea:hover {
     cursor: pointer;
     background-color: #eeee;
-   
+
 }
 
 button {
     font-family: inherit;
-    display:block;
-    margin:auto;
-    padding:1em;
-    border-radius:10px;
-    background-color:var(--primary-color);
-   
+    display: block;
+    margin: auto;
+    padding: 1em;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+
 }
 
 #output {
@@ -66,31 +75,34 @@ button {
     width: 40%;
     margin: .5em auto;
     padding: 1rem;
+    line-height: 1.4;
 }
 
 
-.nav{
-    background-color: var(--primary-color); 
+.nav {
+    background-color: var(--primary-color);
     padding: .5em;
-    border-bottom-left-radius:1em;
-    
+    border-bottom-left-radius: 1em;
+
 
 }
 
-.footer{
-    background-color:var(--primary-color);
+.footer {
+    background-color: var(--primary-color);
     padding: 1em;
-    text-align:center;
-    border-top-right-radius:1em;
+    text-align: center;
+    border-top-right-radius: 1em;
     
-    margin-top:2.7em;
-   
+    }
 
-    
-    
+.footer p {
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.8;
 }
 
-.footer-txt{
-    max-width:600px;
-    margin:auto;
+.footer div {
+    font-weight: bold;
+    font-size: x-large;
+    padding: 0.2em;
 }
