@@ -83,6 +83,8 @@ button {
     background-color: var(--primary-color);
     padding: .5em;
     border-bottom-left-radius: 1em;
+    position:sticky;
+    top:0px;
 
 
 }
@@ -92,6 +94,7 @@ button {
     padding: 1em;
     text-align: center;
     border-top-right-radius: 1em;
+    margin-top:1em;
     
     }
 
