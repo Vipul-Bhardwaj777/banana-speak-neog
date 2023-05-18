@@ -15,6 +15,7 @@ body {
 
 main{
     flex-grow:1;
+    background-color:rgb(251, 251, 251);
 }
 
 
@@ -29,7 +30,7 @@ hr {
 
 div {
     padding: 1rem;
-    margin: auto;
+    margin: auto 15em;
     text-align: center;
 
 
@@ -60,7 +61,7 @@ textarea:hover {
 button {
     font-family: inherit;
     display: block;
-    margin: auto;
+    margin: auto 40em;
     padding: 1em;
     border-radius: 10px;
     background-color: var(--primary-color);
@@ -94,7 +95,7 @@ button {
     padding: 1em;
     text-align: center;
     border-top-right-radius: 1em;
-    margin-top:1em;
+   
     
     }
 
@@ -108,4 +109,13 @@ button {
     font-weight: bold;
     font-size: x-large;
     padding: 0.2em;
+}
+
+.minions{
+    display:block;
+    max-width:300px;
+    float:right;
+    height:40vh;
+   
+   
 }
