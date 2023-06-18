@@ -95,7 +95,7 @@ button {
 
 .footer {
     background-color: var(--primary-color);
-    padding: 1em;
+    padding: .5em;
     text-align: center;
     border-top-right-radius: 1em;
    
@@ -105,7 +105,8 @@ button {
 .footer p {
     max-width: 600px;
     margin: auto;
-    line-height: 1.8;
+    line-height: 1.5;
+    font-size: large;
 }
 
 .footer div {
@@ -122,3 +123,37 @@ button {
    
    
 }
+
+footer ul{
+    padding-inline-start: 0px;
+    max-width: 600px;
+    text-align: center;  
+    margin: .5em auto;
+}
+
+.link{
+    text-decoration:none;
+    padding:0.2em .5em;
+    color:black;
+    font-family: inherit;
+   border:1px solid black;
+   border-radius: 10px;
+   font-size: small;
+   margin: 0px .5em;
+    
+}
+
+
+.link:hover{
+        background-color: white;
+}
+
+.link-active{
+    font-weight:bolder;
+}
+
+.list-inline{
+    display:inline;
+    
+}
+
