@@ -23,6 +23,5 @@ function getTranslationURL(txt){
 }
 
 function errorHandler(error){
-    console.log("An error occured" + error);
-    alert("Something wrong with server: Please try after sometime");
+       alert(error);
 }
